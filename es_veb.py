@@ -1,7 +1,7 @@
 import math
 
 print("Hello World")
-
+print("")
 
 a = math.inf
 
