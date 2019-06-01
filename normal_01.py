@@ -33,15 +33,15 @@ print(max_x)
 # * постарайтесь сделать решение через действия над числами;
 # * при желании и понимании воспользуйтесь синтаксисом кортежей Python.
 
-x = input("Введите первое число")
-y = input("Введите второе число")
+x = int(input("Введите первое число "))
+y = int(input("Введите второе число "))
 
-print(x)
-print(y)
 
 input("а теперь поменяем местами значения переменных, нажмите enter для продолжения")
 
-x, y = y, x
+x = x + y
+y = x - y
+x = x - y
 
 print(x)
 print(y)
@@ -55,16 +55,17 @@ print(y)
 # формула
 # https://www.mathematics-repetition.com/8-klass-algebra/8-2-2-reshenie-polnh-kvadratnh-uravneniy.html
 
-print('a * x ** 2 + b * x + c = 0')
-a = int(input('Введите a '))
-b = int(input('Введите b '))
-c = int(input('Введите c '))
+print("a * x ** 2 + b * x + c = 0")
+print("найдем квадратные корни")
+a = int(input("Введите a "))
+b = int(input("Введите b "))
+c = int(input("Введите c "))
 D = (b ** 2) - (4 * a * c)
 if D > 0:
-    #x_1 = ((- b) - (D ** 0.5)) / (2 * a)
-    #x_2 = ((- b) + (D ** 0.5)) / (2 * a)
-    x_1 = ((- b)) - (math.sqrt(D)) / (2 * a)
-    x_2 = ((- b)) + (math.sqrt(D)) / (2 * a)
+    x_1 = (((- b) - (D ** 0.5)) / (2 * a))
+    x_2 = (((- b) + (D ** 0.5)) / (2 * a))
+    #x_1 = ((- b - (math.sqrt(D))) / (2 * a))
+    #x_2 = ((- b + (math.sqrt(D))) / (2 * a))
     print('X_1 =', x_1)
     print('X_2 =', x_2)
 elif D == 0:
