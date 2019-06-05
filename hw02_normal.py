@@ -1,5 +1,6 @@
 __author__ = 'Садовой Андрей Андреевич'
 
+
 import random
 import math
 
